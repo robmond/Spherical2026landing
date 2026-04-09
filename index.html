@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Spherical — Inteligencia Aplicada para Empresas</title>
-<meta name="description" content="Spherical integra inteligencia artificial a tu operación, tus equipos y tu estrategia. Desde ecosistemas digitales hasta transformación organizacional con IA.">
+<title>Spherical â Inteligencia Aplicada para Empresas</title>
+<meta name="description" content="Spherical integra inteligencia artificial a tu operaciÃ³n, tus equipos y tu estrategia. Desde ecosistemas digitales hasta transformaciÃ³n organizacional con IA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Italiana&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-/* ═══ DESIGN TOKENS (adapted from Liquid Glass UI Kit for Spherical) ═══ */
+/* âââ DESIGN TOKENS (adapted from Liquid Glass UI Kit for Spherical) âââ */
 :root {
   --glass-white:rgba(255,255,255,0.12);
   --glass-white-md:rgba(255,255,255,0.2);
@@ -53,7 +53,7 @@ body{font-family:var(--font-body);font-weight:300;color:var(--color-text);backgr
 a{color:inherit;text-decoration:none}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.scene__blob{animation:none!important}}
 
-/* ═══ ANIMATED BACKGROUND ═══ */
+/* âââ ANIMATED BACKGROUND âââ */
 .scene{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
 .scene__blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:0.5;animation:blob-drift var(--dur,18s) ease-in-out infinite alternate}
 .scene__blob--1{width:700px;height:700px;background:radial-gradient(circle,#5DCAA5,#3b82f6);top:-200px;left:-150px;--dur:22s}
@@ -62,13 +62,13 @@ a{color:inherit;text-decoration:none}
 .scene__blob--4{width:500px;height:500px;background:radial-gradient(circle,#ffd27f,#f7a8c4);top:70%;left:10%;--dur:20s;animation-delay:-5s;opacity:0.3}
 @keyframes blob-drift{0%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,-40px) scale(1.08)}66%{transform:translate(-40px,60px) scale(0.94)}100%{transform:translate(30px,30px) scale(1.04)}}
 
-/* ═══ GLASS UTILITIES ═══ */
+/* âââ GLASS UTILITIES âââ */
 .glass{backdrop-filter:var(--blur-md);-webkit-backdrop-filter:var(--blur-md);background:var(--glass-white);border:1px solid var(--glass-border);box-shadow:var(--shadow-glass);position:relative;overflow:hidden}
 .glass::before{content:"";position:absolute;inset:0;background:var(--reflection-top);pointer-events:none;border-radius:inherit;z-index:1}
 .glass--dark{background:var(--glass-dark-md);border-color:rgba(255,255,255,0.1)}
 .glass--frosted{backdrop-filter:var(--blur-lg);-webkit-backdrop-filter:var(--blur-lg);background:rgba(255,255,255,0.08)}
 
-/* ═══ LAYOUT ═══ */
+/* âââ LAYOUT âââ */
 .page{position:relative;z-index:10}
 .container{width:min(1100px,92vw);margin-inline:auto}
 .section{padding:var(--space-4xl) 0}
@@ -76,7 +76,7 @@ a{color:inherit;text-decoration:none}
 .section__title{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.15;margin-bottom:var(--space-md)}
 .section__desc{font-size:var(--text-base);line-height:1.7;opacity:0.65;max-width:640px}
 
-/* ═══ ANIMATIONS ═══ */
+/* âââ ANIMATIONS âââ */
 @keyframes cascade-in{0%{opacity:0;transform:translateY(24px) scale(0.97);filter:blur(8px)}100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 @keyframes edge-glow{0%,100%{box-shadow:0 0 0 0 rgba(93,202,165,0)}50%{box-shadow:0 0 30px 6px rgba(93,202,165,0.35)}}
@@ -86,7 +86,7 @@ a{color:inherit;text-decoration:none}
 .animate-in{animation:cascade-in var(--dur-slow) var(--ease-glass) both}
 .d1{animation-delay:0.1s}.d2{animation-delay:0.2s}.d3{animation-delay:0.3s}.d4{animation-delay:0.4s}.d5{animation-delay:0.5s}.d6{animation-delay:0.6s}.d7{animation-delay:0.7s}
 
-/* ═══ NAVBAR ═══ */
+/* âââ NAVBAR âââ */
 .navbar{position:fixed;top:var(--space-md);left:50%;transform:translateX(-50%);z-index:100;border-radius:var(--radius-full);padding:var(--space-xs) var(--space-sm);display:flex;align-items:center;gap:4px;animation:cascade-in .6s var(--ease-glass) .05s both}
 .navbar__brand{font-family:var(--font-display);font-size:1.2rem;padding:8px 20px;letter-spacing:0.02em}
 .navbar__link{padding:9px 20px;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:400;opacity:0.65;cursor:pointer;transition:background var(--dur-fast),opacity var(--dur-fast),transform var(--dur-fast) var(--ease-liquid)}
@@ -95,14 +95,14 @@ a{color:inherit;text-decoration:none}
 .navbar__cta::before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--reflection-top);pointer-events:none}
 .navbar__cta:hover{transform:translateY(-2px);box-shadow:0 8px 36px rgba(93,202,165,0.5),var(--reflection-inner)}
 
-/* ═══ HERO ═══ */
+/* âââ HERO âââ */
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 24px 60px;gap:var(--space-lg)}
 .hero__kicker{font-size:var(--text-xs);letter-spacing:0.2em;text-transform:uppercase;opacity:0.55;animation:cascade-in .7s var(--ease-glass) .1s both}
 .hero__title{font-family:var(--font-display);font-size:clamp(2.6rem,8vw,5.5rem);line-height:1.05;letter-spacing:-0.02em;background:linear-gradient(135deg,#fff 20%,var(--spherical-teal) 55%,var(--accent-violet) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:cascade-in .8s var(--ease-glass) .2s both;max-width:900px}
 .hero__sub{max-width:540px;line-height:1.7;opacity:0.65;font-size:var(--text-base);animation:cascade-in .8s var(--ease-glass) .3s both}
 .hero__cta{display:flex;gap:var(--space-sm);flex-wrap:wrap;justify-content:center;animation:cascade-in .8s var(--ease-glass) .4s both}
 
-/* ═══ BUTTONS ═══ */
+/* âââ BUTTONS âââ */
 .btn{display:inline-flex;align-items:center;gap:var(--space-xs);padding:var(--space-sm) var(--space-lg);border-radius:var(--radius-full);border:none;cursor:pointer;font-family:var(--font-body);font-size:var(--text-sm);font-weight:500;letter-spacing:0.04em;color:var(--color-text);text-decoration:none;transition:transform var(--dur-fast) var(--ease-liquid),box-shadow var(--dur-fast),background var(--dur-fast);position:relative;overflow:hidden}
 .btn::before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--reflection-top);pointer-events:none}
 .btn:active{transform:scale(0.96)}
@@ -114,13 +114,13 @@ a{color:inherit;text-decoration:none}
 .btn--accent:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(180,144,245,0.5),var(--reflection-inner)}
 .btn--lg{padding:var(--space-md) var(--space-xl);font-size:var(--text-base)}
 
-/* ═══ STATS ═══ */
+/* âââ STATS âââ */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-md);margin-top:var(--space-3xl);animation:cascade-in .8s var(--ease-glass) .5s both}
 .stats__item{border-radius:var(--radius-lg);padding:var(--space-lg);text-align:center}
 .stats__num{font-family:var(--font-display);font-size:2.2rem;background:linear-gradient(135deg,#fff,var(--spherical-teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .stats__desc{font-size:var(--text-xs);opacity:0.5;letter-spacing:0.04em;margin-top:4px}
 
-/* ═══ CARDS ═══ */
+/* âââ CARDS âââ */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-md)}
 .glass-card{border-radius:var(--radius-xl);padding:var(--space-xl);transition:transform var(--dur-mid) var(--ease-glass),box-shadow var(--dur-mid) var(--ease-glass),background var(--dur-mid)}
 .glass-card:hover{transform:translateY(-6px) scale(1.01);box-shadow:var(--shadow-float);background:var(--glass-white-md)}
@@ -131,14 +131,14 @@ a{color:inherit;text-decoration:none}
 .glass-card__title{font-family:var(--font-display);font-size:clamp(1.2rem,2vw,1.6rem);line-height:1.15;margin-bottom:var(--space-sm)}
 .glass-card__body{font-size:var(--text-md);line-height:1.65;opacity:0.75}
 
-/* ═══ BADGE ═══ */
+/* âââ BADGE âââ */
 .badge{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:var(--radius-full);font-size:var(--text-2xs);font-weight:500;letter-spacing:0.08em;text-transform:uppercase}
 .badge--aqua{background:rgba(93,202,165,0.2);border:1px solid rgba(93,202,165,0.4);color:var(--spherical-teal);box-shadow:0 0 12px rgba(93,202,165,0.18)}
 .badge--violet{background:rgba(180,144,245,0.2);border:1px solid rgba(180,144,245,0.4);color:var(--accent-violet);box-shadow:0 0 12px rgba(180,144,245,0.18)}
 .badge--rose{background:rgba(247,168,196,0.2);border:1px solid rgba(247,168,196,0.4);color:var(--accent-rose)}
 .badge--amber{background:rgba(255,210,127,0.2);border:1px solid rgba(255,210,127,0.4);color:var(--accent-amber)}
 
-/* ═══ TWO-LEVEL SPLIT ═══ */
+/* âââ TWO-LEVEL SPLIT âââ */
 .level-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-lg)}
 .level-card{border-radius:var(--radius-2xl);padding:var(--space-2xl);display:flex;flex-direction:column;gap:var(--space-lg);transition:transform var(--dur-mid) var(--ease-glass),box-shadow var(--dur-mid)}
 .level-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-float)}
@@ -152,7 +152,7 @@ a{color:inherit;text-decoration:none}
 .level-card__for{font-size:var(--text-sm);opacity:0.5;font-style:italic;padding-top:var(--space-sm);border-top:1px solid var(--glass-border-subtle)}
 .level-card__cta{margin-top:auto}
 
-/* ═══ PRODUCT BOX ═══ */
+/* âââ PRODUCT BOX âââ */
 .product-box{border-radius:var(--radius-2xl);padding:var(--space-2xl) var(--space-3xl);display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--space-lg)}
 .product-box__price{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);background:linear-gradient(135deg,var(--spherical-teal),var(--accent-aqua));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .product-features{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-md);width:100%;max-width:700px;margin-top:var(--space-md)}
@@ -160,7 +160,7 @@ a{color:inherit;text-decoration:none}
 .product-feature__title{font-weight:500;font-size:var(--text-sm);margin-bottom:4px}
 .product-feature__desc{font-size:var(--text-xs);opacity:0.6;line-height:1.6}
 
-/* ═══ TESTIMONIALS ═══ */
+/* âââ TESTIMONIALS âââ */
 .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-md)}
 .testimonial{border-radius:var(--radius-xl);padding:var(--space-xl);display:flex;flex-direction:column;gap:var(--space-md)}
 .testimonial__quote{font-size:var(--text-md);line-height:1.7;opacity:0.75;font-style:italic}
@@ -169,7 +169,7 @@ a{color:inherit;text-decoration:none}
 .testimonial__name{font-weight:500;font-size:var(--text-sm)}
 .testimonial__role{font-size:var(--text-xs);opacity:0.5}
 
-/* ═══ DIFFERENTIATORS ═══ */
+/* âââ DIFFERENTIATORS âââ */
 .diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-md)}
 .diff-card{border-radius:var(--radius-xl);padding:var(--space-xl);transition:transform var(--dur-mid) var(--ease-glass)}
 .diff-card:hover{transform:translateY(-4px)}
@@ -177,7 +177,7 @@ a{color:inherit;text-decoration:none}
 .diff-card__title{font-weight:500;font-size:var(--text-base);margin-bottom:var(--space-xs)}
 .diff-card__desc{font-size:var(--text-sm);opacity:0.65;line-height:1.65}
 
-/* ═══ STEPPER ═══ */
+/* âââ STEPPER âââ */
 .stepper{display:flex;flex-direction:column;gap:var(--space-lg);max-width:600px;margin-inline:auto}
 .step{display:flex;gap:var(--space-lg);align-items:flex-start}
 .step__node{width:48px;height:48px;border-radius:50%;border:1px solid var(--glass-border);background:var(--glass-white);backdrop-filter:var(--blur-sm);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.2rem;flex-shrink:0;box-shadow:0 4px 20px rgba(0,0,0,0.2);transition:all var(--dur-mid)}
@@ -187,12 +187,12 @@ a{color:inherit;text-decoration:none}
 .step__desc{font-size:var(--text-sm);opacity:0.65;line-height:1.65}
 .step__connector{width:1px;height:32px;background:var(--glass-border-subtle);margin-left:24px}
 
-/* ═══ CTA SECTION ═══ */
+/* âââ CTA SECTION âââ */
 .cta-section{text-align:center;padding:var(--space-4xl) 0}
 .cta-section__title{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin-bottom:var(--space-md);background:linear-gradient(135deg,#fff 20%,var(--spherical-teal) 60%,var(--accent-violet) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .cta-section__sub{font-size:var(--text-base);opacity:0.55;margin-bottom:var(--space-xl);max-width:500px;margin-inline:auto;line-height:1.7}
 
-/* ═══ FOOTER ═══ */
+/* âââ FOOTER âââ */
 .footer{border-top:1px solid var(--glass-border-subtle);padding:var(--space-2xl) 0 var(--space-xl)}
 .footer__inner{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:var(--space-xl)}
 .footer__brand{font-family:var(--font-display);font-size:1.3rem;margin-bottom:var(--space-sm)}
@@ -203,10 +203,10 @@ a{color:inherit;text-decoration:none}
 .footer__links a:hover{opacity:1}
 .footer__copy{text-align:center;font-size:var(--text-xs);opacity:0.3;margin-top:var(--space-2xl);padding-top:var(--space-lg);border-top:1px solid var(--glass-border-subtle)}
 
-/* ═══ DIVIDER ═══ */
+/* âââ DIVIDER âââ */
 .divider{height:1px;background:linear-gradient(90deg,transparent,var(--glass-border-subtle),transparent);margin:var(--space-xl) 0}
 
-/* ═══ CLIENTS ROW ═══ */
+/* âââ CLIENTS ROW âââ */
 .clients-row{display:flex;align-items:center;justify-content:center;gap:var(--space-2xl);flex-wrap:wrap;padding:var(--space-xl) 0}
 .client-name{font-family:var(--font-display);font-size:1.4rem;opacity:0.3;transition:opacity var(--dur-fast)}
 .client-name:hover{opacity:0.7}
@@ -215,7 +215,7 @@ a{color:inherit;text-decoration:none}
 [data-theme="light"] .client-logo{filter:brightness(0.8);opacity:0.5}
 [data-theme="light"] .client-logo:hover{filter:brightness(1);opacity:1}
 
-/* ═══ RESPONSIVE ═══ */
+/* âââ RESPONSIVE âââ */
 @media(max-width:900px){
   .level-grid,.product-features{grid-template-columns:1fr}
   .diff-grid{grid-template-columns:1fr 1fr}
@@ -233,7 +233,7 @@ a{color:inherit;text-decoration:none}
   .navbar__brand{font-size:1rem;padding:8px 14px}
 }
 
-/* ═══ LIGHT THEME ═══ */
+/* âââ LIGHT THEME âââ */
 [data-theme="light"]{
   --glass-white:rgba(255,255,255,0.62);--glass-white-md:rgba(255,255,255,0.78);--glass-white-lg:rgba(255,255,255,0.9);
   --glass-dark:rgba(0,0,0,0.06);--glass-dark-md:rgba(15,23,42,0.08);
@@ -277,7 +277,7 @@ a{color:inherit;text-decoration:none}
 [data-theme="light"] .testimonial__avatar{border-color:rgba(255,255,255,0.8)}
 [data-theme="light"] .glass-card__icon{background:rgba(255,255,255,0.7);border-color:rgba(15,23,42,0.14)}
 
-/* ═══ THEME TOGGLE ═══ */
+/* âââ THEME TOGGLE âââ */
 .theme-toggle{position:fixed;top:var(--space-md);right:var(--space-md);z-index:800;width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:transform var(--dur-fast) var(--ease-liquid),box-shadow var(--dur-fast)}
 .theme-toggle:hover{transform:scale(1.1) rotate(15deg)}
 .theme-toggle .icon-dark{display:block}
@@ -285,7 +285,7 @@ a{color:inherit;text-decoration:none}
 [data-theme="light"] .theme-toggle .icon-dark{display:none}
 [data-theme="light"] .theme-toggle .icon-light{display:block}
 
-/* ═══ DIAGNOSTIC BANNER ═══ */
+/* âââ DIAGNOSTIC BANNER âââ */
 .diag-banner{border-radius:var(--radius-2xl);padding:var(--space-2xl) var(--space-3xl);display:flex;align-items:center;gap:var(--space-2xl);position:relative;overflow:hidden;backdrop-filter:var(--blur-lg);-webkit-backdrop-filter:var(--blur-lg);background:rgba(255,255,255,0.08);border:1px solid var(--glass-border)}
 .diag-banner::before{content:"";position:absolute;inset:0;background:var(--reflection-top);pointer-events:none;border-radius:inherit;z-index:1}
 .diag-banner::after{content:"";position:absolute;inset:-1px;border-radius:inherit;background:linear-gradient(135deg,rgba(93,202,165,0.4) 0%,rgba(180,144,245,0.4) 50%,rgba(93,202,165,0.2) 100%);z-index:0;opacity:0.3;pointer-events:none}
@@ -302,7 +302,7 @@ a{color:inherit;text-decoration:none}
 </head>
 <body>
 
-<!-- ═══ ANIMATED BACKGROUND ═══ -->
+<!-- âââ ANIMATED BACKGROUND âââ -->
 <div class="scene">
   <div class="scene__blob scene__blob--1"></div>
   <div class="scene__blob scene__blob--2"></div>
@@ -312,34 +312,34 @@ a{color:inherit;text-decoration:none}
 
 <div class="page">
 
-<!-- ═══ THEME TOGGLE ═══ -->
+<!-- âââ THEME TOGGLE âââ -->
 <button class="glass theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Cambiar modo claro / oscuro">
   <span class="icon-dark" aria-hidden="true">&#9728;&#65039;</span>
   <span class="icon-light" aria-hidden="true">&#127769;</span>
 </button>
 
-<!-- ═══ NAVBAR ═══ -->
+<!-- âââ NAVBAR âââ -->
 <nav class="navbar glass">
   <a href="#" class="navbar__brand"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJMAAAAyCAQAAADyrCHVAAAAAmJLR0QA/4ePzL8AAAAHdElNRQfqBAkMAxG7BPFbAAAQiklEQVRo3u2baZRV1ZmGn33OrYEqKIp5iAiCCbaKSRxiNCpINA4BFRNE44SKYpyaaEzsoICaZRI7ZmknGoc2oivOI4qahKAis7qcEBREQSQqiAOoSA33Pv3j7Hu5VTJoetmuxnx/6tx99tln73d/w/t9ZxdsQgJJ6TqhkgGkLe7+S1pJDhiljhRSejDD84QcCe2BloB+ySSwLQMASIHuLHeFQw3AReq9BuBoV3nwFz3RLxKiBFis9iEAnVniFDsBcJ7rPMFOQFcW2uwwA73Z7oue8hchOeBcC95pJ6CexT5iDoDx6qECdONVZ9kXgLlqLxLSL4/HClQAZ6tDBWjPiz5qSg4YV2rdlledbTUAZ6l/s2Pp+S1akrIFXqDR52zFEqeaK4E0BEgY7xpnWUMaAf2RACf4F79KaBEPt1AJdGR8hAN685aPmJKSmdtQoRK4Xd0dgJ+oIwSo4Q31EL/oFXyu4MDX2RaoZr56mABb85ZTIkhFc6smJaGOHUjKQEqpZY7z/C45utH3i17O5wdSN5pdYhU5Jnq7kGnS38yRAmPVIbb2O+dFkHK05SlftjMAj6n9YEtkUoEaFvqgRf8UqGeJU61oYW6BOi5yqo/4mFN9yUZHCBXkmObiCNIp6kN23TJhygEPeLlQQUoFcL4rrARgQvRUga4s9E2v8nde5mWeb18yTzXMvFsBMFo9abPeKXyGaBhIvkDAQ8v8IgWWOs7sKgUme5uwA4+Zj265K0ucZe0GAP61zwjb8ID5CNJRznNPNqRR6+Np8n9GHZL/ZewN2SAVwAQb7U2ggm1IgMneLhyEThSgC0ucbRXQlz1JyVEBZLzpUuca2Be9x8xgX42+rPX0Mtg6sxW16yewieXB8d7vXfbdbN/PA1w42kf883rV+IV6EADHmfdk4S/eKqTsTFegK0udZRUJME0dQADGuMS9gN86Q0jZg68A7XjBZ+y/kV35HlN8w3d81T/adTOLzwH/pequ/PO+LscEJ9rtMwOdkvHHVbaHwA5c6zqHCNCHN/2HhwgPR5ggS0tmWk0CnGPem+0OdGOFOky4whkWl1HHCz5n3UZe+yPLZZ5dNumnUuA3NtngN/9JmBJgZ1THmsH+2WA6x2ZfzVZzg/rzMp5UD8BkbxUqgO4scabVpGQ86chohK/6uDuSAlc5I06iI8/7vHVAGx73YatavLieN9UGb/LnzrFJvUJICaRxQxJSUtIISQpcqja7M1lwST+RNRafSFssMCUQSKkg0J1nfNNBJaBD6YmwgXGSUo8sr9XXMpgGcIHdgK1Z6d/NkUWvByNMe7HImTF3O1s9Qgh0YbGzrY19r3SGUMGePOXztiMAp6vP2qbFvu6DFrxagLYsV9fYvmyqLadd1CZtdtcW0IQN9N/Q743p16ZHSsraijDlYB7zAvRmrs9xUGgGGkt7OczbeYX9wjr6cYZnMoI7AnRirivZN6wr9c0B3/deVvK18CFykn/gdG4JjQRa84PVQC0fchEH8jE1rKYvg5X7wjvsx9524HX+Gp5vsYgPge+xlx1Zym1hOQmFOPJ+DLYLa5jO/aFAQoEcw+zA1JDnZOF3oQ2HCnPDUwQCBdox1G9SyWImhWUEQGQQ+9iJN3gozGMAu9vIg+Gdcvgqgd686RQzs5nlxcLD3iZ8gykeLsCf1P+I5vZKrA305U5HCFc7VdiJ2Z4mZHXOk1uhE4COvGXB9z2q7N56j/VD/1TyWo1eFmsSv1E/9jgnle6tdBCZqdZzV5mnmx6LOm1Zqc5waXT+g1G9IGaje7Oo9MTbDgQC7cvG+dgfm4WNHYAz1xtdlpYUc7dfq3cbeMhbLF/KblxiV6ALi50TPdWv1EkGrvHhsoWfpI4SUo71RMur6XBsnMxkv0VWskmBw2zy47is110R+/xeyHzTWpvV91ymNqrzrSIlxwOqLvVRF6v6gnVADYtsioC+aXsG02STZwuwE++p2uBrrlLPEHIUt2C5K+McmvzQ7YAT1GXWQWBvXndKTEsmqEdbC/zFPws5ci2cY+eoSTngFJs9397ARP8qkUmdVOLh3VDtWWY8CXCkb6u6zsttRxYkDrVgo7rQg+lID05zjU3qQOC3EZoJ9qKeI/3IZnUPYITa7KURmnE2qRcKfVltQf2D3ehL4EAKFjxXyDFd1UnuTAf6cIlHCaepeRd6EJ3oyVmuVQs2uF1UhNesg4vVp8tAyopuW9HgyBjpikaTY0eWOiuCNKoERwc+8CdCVVlrjlpmu8CRVlAuKbANt1hQ9Rm3BeAQtdk17lDqd4Ja8EbhMlWvL2nrjWrBY4V7zPu0gZQ25IBpNrvQwHY0WvD1GHYyipwRguFq3pllGl5BNYvM+14Zzxuj5iNMNxdhOt6XYtF2fKkK0I1lpVLcYc51qUtc4lKbfNg2pMDJ6glCSj3zfSpCd2LJ3Gp40sWboHT7MTcyp3bAoao+IFQQSEip4iULPm5mdAUHk5CjgoSTLVjwOGGpBVe7zNdd5nKX+aHabDf6sE69T2JQz2AaJ/zBgnps9FIJOWBb1lrwrvjulJSuvKuuc7u4Ka9ZR+7GcDsNwHgnMCQ8CHRltssYEqCZc/wt1zKHhGYSFofppOQ5xWs4kRtCBTVMt4n9QhN5Rnkdo7g+pFTxmPXsEd6GFnGuljYUWIP8ncfDREewI8f4x5CZ9XtAAZFAA++QpUKVgKymAAQKfEwA8qS0ByqoixEvZS0fYHQRsiL+LYoUbWMNKXmgQEKgkoTA6hjvCkADDaUnS5ucKWCxCgDdWOJMK0nIeNKIFhGrskyTKoGJpTgwumRuNTwRyyrdGVTybCnwU992hbsBtQR68bF5JwrD1IKvWAXkqAS2Z7V5HxKuUPMxWUlLQeB4YZF551pFJ7rQmVp60JMOQH/WqldJJJ3rtennasFr451s5R1ZYcGFVkCsjexLs4WoTTetj3QJF0Zzy3K36VaVGPdwIWGsf7KOHFVk9aSREaRq1vgDoT+32uQpQkINT/pKrD3dqv6grOowTNU7IvDDbTbvVcJhaoN6tRmoXZlmQT3NzIXn3aUVTKPMsr11JXLRk8d90auFf2Ot+sdWMJ0v7ECjTTZ5anxmIPtBjHPX2xaA/jxvoeTCSzD14+mSJnVlqTNignuO+sPozlX7k0SQTizpVz3vO4jAiepdQkJt1KTsU2fBv9m/pLqBWuareaf7O292jXl1fzKYGlWd4+Ve5RJVn7UW+HVZTpcCx9hkkycIfVilNnq3E/y9y1U9RdieD2zyyhJMB9Jkk+cJWUBoVGd5vZNscoywG43m1YXe5F2+o66z2bVuB0y0KcvpBtDgXTGALy2ZW1GToCuLneYBrcxtL7pGmAYCdYy0P5SZW0YZx7Qw2AT4Oq+1SH4vtRjp8l4Z2U8mL8bYc7mqu5Vg+j6WyOu+vNFitIsF2B7VGySSmaEaqUIFlVzf4omjBTjatWVt95qRze2BO9R3soSqBx3KNKnc3FK68YqzY2Y2OoIEg9H7hY6858ASDDU86aKoSUepP4lp7XoJQA8u9SkXO99JHmaRN6kOtSfXOM+XneOFdogud6STvcd+FL9E7879PuB3o5/sxaU+4WIXeKcHkCVNW3GHkz1VYt1zF+53ssNjct6Po7zPBb7so55uTRx1J653nq8413HmGOljPmhvYIwPep01xQX04NVPmFsFNcx3TuQfo6O5Bep53rccY0JH1vodoIKEWp50sV0IUZP+XajaaHLalqr4u+izCh4hQAVtW/XdmBS/Bya0pSaGifLENmFDie4lQnu2prasX9argnat3tDi6SpO9iUfj5pUrAJUA+f4rrVAjlOjJiXUM89n7QHAWD+yPSlQyxMlx/1Jc9vQ4opGlAKHqzrcQGW8l5alva1r4emnuG5dm1pfUL7QhB84cBP9swpY0qI9B725FtkjNABnexlHcGeooBkYyBQ+ohcP+HVGcUMItGOmzewdPgBG+UuOZjWBGqZZz+5hFXCUNzOGKwIMdyj/Ef7RqkYg+XhV+ETb+nv5snstEQ/k6cFh1vAR94YV7MgQ2/AuN4Z17I/sYltuCi9RzXD78hYTwzbUMweoYRAPUaCKQdS4NCzjSL8KPMPkUMlh9uJ1bgvD3RGZx92hgiPclhXcHD7IlO1cj7NldMtkknca6EeDs+Npgvk+24onhci4M00aoZ4ppFSyXD2AT9bDW0pK5skyd7r50n6gI5f7LWr5Jn34Klf4NWoZzK9sxzQPsZYBXCkM5gJhhP3Zh+Pj7McLFxk4xuGmjPZU29ORnzlMeNSdqWaoIwU4xX35Br8Uhrlbywn8NJobnOss+wOTI8fZmu5APfNj+fZr3Gyjo4SENiWQEnrQ6C/MKOJUFzi0VUa3IUmAgfzdqe7L5gu5CXCEw0pbeYYDItTHeLgXxvbz7EUHxnmM7YD9yFZVx0+Fi4VD3IuU8RaBH2sHxkXCsBe7sDP78HvrucDjbEeWzxJI6ce5juQI7gzQnXG0pTeLyMc0YBlQz0zzfCd8SGCQP+IO/jukVDPN9nw7rKKSRob4LpeEhGYm249vhZWbBSkzvWlMC+t/bVqXoJ5FASpoRipYDeTI8z6deItASp4G2vA6F4UhjPem0IAEoJkqiCtKyNEA5ChQoJlKmsgKO52VhIZwS3ifi8PBXOCkMJMEUpo5xJO4nDsDdGGWT7N7eBTpwxtxr+qZZRPfCR9RCdwWTmFcIOZue4ZV8fUdWE2gwEC+z/5hZckhb14+7QfOAvB4ONx2NFFLB54KJ5jSQFcGMSt0RkCqWUt/vsFkfhOOdAW7IXKw21NMetvQQI69aabAMNfwNrWAPMPKMCncGxZTYBt25SF+GX6YUYk8cFP4wPsCdGe2b3Bg+Bg4w504OiQ0Us8MG6PjbgTWcF2ArZlkO74dVtGJhCzNzdz1Di7kZUIsAH8a+bTHWCThJe4PY/0HtdwdptOTC3yXnvw5LIsJLLxDgdUc4+7UMz0sYjkTXIlMB1YAH4S1wNXhNHejgoQrQhveAgJ3hDP9Nk104ZrQwEh3oZ4pLXcwcJwLnBmJweiYYEId833OtgRgIA/5tE/7nM/b4Gy7ADDb9+0NnOvLAozxNdt9yoV/dglAFdtQHa/bsU2kFkXPVrzqQ/Fo2lcoFnUyNlVc+Vb0jGOuDx596Fe67k2n8lcnpGyNGs+8rWfc7Vngs7YrZXT3eJ6/8Gf+LB6+gJHqAnsBY31RgHs/ddz65yTZwPXGjDawPqfc0L3W7RvrVZKUMbEe+eNYBQjU80Lpk9JoW38IqCAjk2dbBVSxzCuEwIFc3aK4+3lI2Mg1n6J9cyOHzY/Qh/vNx7SkfTS3hCztzSjA6f7KtuSojiCdaQbyNBfZ4TOdNvl/KpUk7B/TWugQzS1QXkDpjOp28SBCkUwG/uoSu1BU8i3+9GXC99iaHPvztM9ZV/JJJ8Ua91wXeJTVZNz5DAGqmRozui3w6NemZE/0w3iaYHQJpDY86Ut2A+DIqEmVDOTReKBwi9ehcskR6MI9niX04Y7S0a5qnvBlOwDZp5wzhYTeqG71ZQOppRyAThJyHOlc59sR6MJZNjomlrmqucqxfunMrShJPBNyML1JyPGGuiMQuE79zxafOv8lQBa9dmX/WBDdmRF2KmOy6ZdVk8rlS/TPOpuQ/wEvdQlcBXbtiQAAAB50RVh0aWNjOmNvcHlyaWdodABHb29nbGUgSW5jLiAyMDE2rAszOAAAABR0RVh0aWNjOmRlc2NyaXB0aW9uAHNSR0K6kHMHAAAAAElFTkSuQmCC" alt="Spherical" style="height:28px;width:auto;filter:brightness(2)"></a>
   <a href="#servicios" class="navbar__link">Servicios</a>
-  <a href="#como" class="navbar__link">Cómo trabajamos</a>
+  <a href="#como" class="navbar__link">CÃ³mo trabajamos</a>
   <a href="#clientes" class="navbar__link">Clientes</a>
   <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0SnRZranoG4i04izzBxi3LlSPK0uRi1-M7JTp24WHbxQK3P_iEsVd7lZY0AlEmI2yhMH5jmN7J" target="_blank" rel="noopener" class="navbar__cta">Conversemos</a>
 </nav>
 
-<!-- ═══ HERO ═══ -->
+<!-- âââ HERO âââ -->
 <section class="hero">
   <span class="hero__kicker">Inteligencia aplicada para empresas</span>
   <h1 class="hero__title">Tu empresa ya tiene el talento. Nosotros le damos las herramientas para multiplicarlo.</h1>
-  <p class="hero__sub">Spherical integra inteligencia artificial a tu operación, tus equipos y tu estrategia. No vendemos tecnología. Instalamos capacidades que tu organización adopta y conserva.</p>
+  <p class="hero__sub">Spherical integra inteligencia artificial a tu operaciÃ³n, tus equipos y tu estrategia. No vendemos tecnologÃ­a. Instalamos capacidades que tu organizaciÃ³n adopta y conserva.</p>
   <div class="hero__cta">
-    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0SnRZranoG4i04izzBxi3LlSPK0uRi1-M7JTp24WHbxQK3P_iEsVd7lZY0AlEmI2yhMH5jmN7J" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Agenda una sesión exploratoria</a>
-    <a href="#servicios" class="btn btn--ghost btn--lg">Conoce cómo trabajamos ↓</a>
+    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0SnRZranoG4i04izzBxi3LlSPK0uRi1-M7JTp24WHbxQK3P_iEsVd7lZY0AlEmI2yhMH5jmN7J" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Agenda una sesiÃ³n exploratoria</a>
+    <a href="#servicios" class="btn btn--ghost btn--lg">Conoce cÃ³mo trabajamos â</a>
   </div>
   <div class="stats">
     <div class="stats__item glass">
       <div class="stats__num">8+</div>
-      <div class="stats__desc">Años de experiencia</div>
+      <div class="stats__desc">AÃ±os de experiencia</div>
     </div>
     <div class="stats__item glass">
       <div class="stats__num">100+</div>
@@ -356,64 +356,64 @@ a{color:inherit;text-decoration:none}
   </div>
 </section>
 
-<!-- ═══ PROBLEMA ═══ -->
+<!-- âââ PROBLEMA âââ -->
 <section class="section">
   <div class="container">
-    <p class="section__eyebrow animate-in d1">El verdadero desafío</p>
-    <h2 class="section__title animate-in d2">La tecnología no es el problema. La adopción sí.</h2>
-    <p class="section__desc animate-in d3" style="margin-bottom:var(--space-xl)">Cada semana aparece una nueva herramienta de IA que promete transformar tu empresa. Pero entre la promesa y el resultado hay una brecha que la mayoría no logra cruzar.</p>
+    <p class="section__eyebrow animate-in d1">El verdadero desafÃ­o</p>
+    <h2 class="section__title animate-in d2">La tecnologÃ­a no es el problema. La adopciÃ³n sÃ­.</h2>
+    <p class="section__desc animate-in d3" style="margin-bottom:var(--space-xl)">Cada semana aparece una nueva herramienta de IA que promete transformar tu empresa. Pero entre la promesa y el resultado hay una brecha que la mayorÃ­a no logra cruzar.</p>
     <div class="card-grid">
       <div class="glass-card glass animate-in d4">
-        <div class="glass-card__icon">🛒</div>
+        <div class="glass-card__icon">ð</div>
         <div class="glass-card__title">Se compra, no se implementa</div>
-        <div class="glass-card__body">Las empresas adquieren licencias y aprueban presupuestos. Pero nadie traduce la tecnología a los procesos reales del equipo. El software queda instalado. Los hábitos quedan intactos.</div>
+        <div class="glass-card__body">Las empresas adquieren licencias y aprueban presupuestos. Pero nadie traduce la tecnologÃ­a a los procesos reales del equipo. El software queda instalado. Los hÃ¡bitos quedan intactos.</div>
       </div>
       <div class="glass-card glass animate-in d5">
-        <div class="glass-card__icon">📄</div>
+        <div class="glass-card__icon">ð</div>
         <div class="glass-card__title">Se diagnostica, no se ejecuta</div>
-        <div class="glass-card__body">Las consultoras entregan informes brillantes de 80 páginas. El directorio los aprueba. Y después nadie sabe cómo convertir las recomendaciones en acciones concretas.</div>
+        <div class="glass-card__body">Las consultoras entregan informes brillantes de 80 pÃ¡ginas. El directorio los aprueba. Y despuÃ©s nadie sabe cÃ³mo convertir las recomendaciones en acciones concretas.</div>
       </div>
       <div class="glass-card glass animate-in d6">
-        <div class="glass-card__icon">🔧</div>
+        <div class="glass-card__icon">ð§</div>
         <div class="glass-card__title">Se implementa, no se adopta</div>
-        <div class="glass-card__body">La agencia entrega el chatbot, la landing, la automatización. Funciona técnicamente. Pero el equipo no confía en la herramienta y vuelve a hacer las cosas como antes.</div>
+        <div class="glass-card__body">La agencia entrega el chatbot, la landing, la automatizaciÃ³n. Funciona tÃ©cnicamente. Pero el equipo no confÃ­a en la herramienta y vuelve a hacer las cosas como antes.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ PROPUESTA DE VALOR ═══ -->
+<!-- âââ PROPUESTA DE VALOR âââ -->
 <section class="section">
   <div class="container" style="text-align:center;">
-    <p class="section__eyebrow animate-in d1" style="text-align:center;">Qué hacemos diferente</p>
+    <p class="section__eyebrow animate-in d1" style="text-align:center;">QuÃ© hacemos diferente</p>
     <h2 class="section__title animate-in d2" style="max-width:700px;margin-inline:auto;">Entramos a tu empresa. Entendemos tu realidad. Construimos lo que necesitas. Y nos quedamos hasta que tu equipo lo adopta.</h2>
     <div class="divider"></div>
     <div class="card-grid" style="margin-top:var(--space-xl);">
       <div class="glass-card glass animate-in d3">
-        <div class="glass-card__icon" style="background:rgba(93,202,165,0.15);border-color:rgba(93,202,165,0.3)">⚡</div>
-        <div class="glass-card__title">Capacidad técnica</div>
-        <div class="glass-card__body">Diseñamos arquitectura de IA, configuramos modelos, estructuramos datos, construimos dashboards y automatizamos procesos. Sabemos hacer que la tecnología funcione.</div>
+        <div class="glass-card__icon" style="background:rgba(93,202,165,0.15);border-color:rgba(93,202,165,0.3)">â¡</div>
+        <div class="glass-card__title">Capacidad tÃ©cnica</div>
+        <div class="glass-card__body">DiseÃ±amos arquitectura de IA, configuramos modelos, estructuramos datos, construimos dashboards y automatizamos procesos. Sabemos hacer que la tecnologÃ­a funcione.</div>
       </div>
       <div class="glass-card glass animate-in d4">
-        <div class="glass-card__icon" style="background:rgba(180,144,245,0.15);border-color:rgba(180,144,245,0.3)">🎯</div>
-        <div class="glass-card__title">Visión estratégica</div>
-        <div class="glass-card__body">Entendemos de negocio, no solo de código. Cada solución parte del problema real de la empresa, no de la herramienta de moda. Hablamos el idioma de la gerencia.</div>
+        <div class="glass-card__icon" style="background:rgba(180,144,245,0.15);border-color:rgba(180,144,245,0.3)">ð¯</div>
+        <div class="glass-card__title">VisiÃ³n estratÃ©gica</div>
+        <div class="glass-card__body">Entendemos de negocio, no solo de cÃ³digo. Cada soluciÃ³n parte del problema real de la empresa, no de la herramienta de moda. Hablamos el idioma de la gerencia.</div>
       </div>
       <div class="glass-card glass animate-in d5">
-        <div class="glass-card__icon" style="background:rgba(247,168,196,0.15);border-color:rgba(247,168,196,0.3)">🤝</div>
-        <div class="glass-card__title">Acompañamiento en adopción</div>
-        <div class="glass-card__body">Facilitamos workshops, capacitamos equipos y acompañamos la transición. No nos vamos cuando se entrega el proyecto. Nos vamos cuando el equipo lo incorporó.</div>
+        <div class="glass-card__icon" style="background:rgba(247,168,196,0.15);border-color:rgba(247,168,196,0.3)">ð¤</div>
+        <div class="glass-card__title">AcompaÃ±amiento en adopciÃ³n</div>
+        <div class="glass-card__body">Facilitamos workshops, capacitamos equipos y acompaÃ±amos la transiciÃ³n. No nos vamos cuando se entrega el proyecto. Nos vamos cuando el equipo lo incorporÃ³.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ DOS NIVELES ═══ -->
+<!-- âââ DOS NIVELES âââ -->
 <section class="section" id="servicios">
   <div class="container">
-    <p class="section__eyebrow animate-in d1">Cómo trabajamos</p>
+    <p class="section__eyebrow animate-in d1">CÃ³mo trabajamos</p>
     <h2 class="section__title animate-in d2">Nos adaptamos a la profundidad que tu empresa necesita</h2>
-    <p class="section__desc animate-in d3" style="margin-bottom:var(--space-xl)">Algunas empresas necesitan activar su ecosistema digital. Otras necesitan transformar su operación con IA. Muchas empiezan por lo primero y evolucionan hacia lo segundo.</p>
+    <p class="section__desc animate-in d3" style="margin-bottom:var(--space-xl)">Algunas empresas necesitan activar su ecosistema digital. Otras necesitan transformar su operaciÃ³n con IA. Muchas empiezan por lo primero y evolucionan hacia lo segundo.</p>
 
     <div class="level-grid">
       <!-- Nivel 1 -->
@@ -422,50 +422,50 @@ a{color:inherit;text-decoration:none}
         <h3 class="level-card__title">Activamos tu infraestructura digital con IA integrada</h3>
         <p class="level-card__desc">Construimos y ponemos en marcha las herramientas digitales que tu empresa necesita para crecer.</p>
         <ul class="level-card__list">
-          <li>Marketing digital y campañas de crecimiento</li>
+          <li>Marketing digital y campaÃ±as de crecimiento</li>
           <li>Sitios web, e-commerce y plataformas</li>
-          <li>Chatbots y automatización comercial</li>
-          <li>Producción audiovisual y contenido con IA</li>
-          <li>E-learning, gamificación y plataformas LMS</li>
+          <li>Chatbots y automatizaciÃ³n comercial</li>
+          <li>ProducciÃ³n audiovisual y contenido con IA</li>
+          <li>E-learning, gamificaciÃ³n y plataformas LMS</li>
         </ul>
-        <p class="level-card__for">Para empresas que necesitan resultados digitales rápidos, tangibles y con IA incorporada.</p>
-        <a href="#producto" class="btn btn--primary level-card__cta">Ver producto de entrada →</a>
+        <p class="level-card__for">Para empresas que necesitan resultados digitales rÃ¡pidos, tangibles y con IA incorporada.</p>
+        <a href="#producto" class="btn btn--primary level-card__cta">Ver producto de entrada â</a>
       </div>
 
       <!-- Nivel 2 -->
       <div class="level-card level-card--n2 glass animate-in d5">
         <span class="level-card__badge badge badge--violet">IA Empresarial</span>
-        <h3 class="level-card__title">Nos integramos a tu operación para transformarla desde adentro</h3>
-        <p class="level-card__desc">Operamos como una extensión de tu equipo. Diagnosticamos, diseñamos, implementamos y acompañamos.</p>
+        <h3 class="level-card__title">Nos integramos a tu operaciÃ³n para transformarla desde adentro</h3>
+        <p class="level-card__desc">Operamos como una extensiÃ³n de tu equipo. Diagnosticamos, diseÃ±amos, implementamos y acompaÃ±amos.</p>
         <ul class="level-card__list">
-          <li>Diagnóstico de madurez digital y arquitectura de IA</li>
-          <li>Implementación de ecosistemas inteligentes</li>
-          <li>Automatización profunda por área</li>
-          <li>Workshops y programas de adopción organizacional</li>
-          <li>Acompañamiento estratégico mensual</li>
+          <li>DiagnÃ³stico de madurez digital y arquitectura de IA</li>
+          <li>ImplementaciÃ³n de ecosistemas inteligentes</li>
+          <li>AutomatizaciÃ³n profunda por Ã¡rea</li>
+          <li>Workshops y programas de adopciÃ³n organizacional</li>
+          <li>AcompaÃ±amiento estratÃ©gico mensual</li>
         </ul>
-        <p class="level-card__for">Para empresas que saben que necesitan IA pero no saben por dónde empezar.</p>
-        <a href="#contacto" class="btn btn--accent level-card__cta">Agenda una conversación →</a>
+        <p class="level-card__for">Para empresas que saben que necesitan IA pero no saben por dÃ³nde empezar.</p>
+        <a href="#contacto" class="btn btn--accent level-card__cta">Agenda una conversaciÃ³n â</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ PRODUCTO ESTRELLA ═══ -->
+<!-- âââ PRODUCTO ESTRELLA âââ -->
 <section class="section" id="producto">
   <div class="container">
     <div class="product-box glass animate-in d1">
       <span class="badge badge--aqua">Empieza ahora</span>
-      <h2 class="section__title" style="text-align:center;margin-bottom:0">Activa tu ecosistema de IA en 5 días hábiles</h2>
+      <h2 class="section__title" style="text-align:center;margin-bottom:0">Activa tu ecosistema de IA en 5 dÃ­as hÃ¡biles</h2>
       <div class="product-box__price">Desde $650.000 CLP/mes</div>
       <p style="opacity:0.6;max-width:500px;text-align:center;line-height:1.7;font-size:var(--text-md)">No necesitas un proyecto de 6 meses para empezar. En una semana, tu empresa puede tener funcionando un sistema digital inteligente.</p>
       <div class="product-features">
         <div class="product-feature glass">
           <div class="product-feature__title">Landing page</div>
-          <div class="product-feature__desc">Propuesta de valor clara y diseñada para convertir visitantes en clientes.</div>
+          <div class="product-feature__desc">Propuesta de valor clara y diseÃ±ada para convertir visitantes en clientes.</div>
         </div>
         <div class="product-feature glass">
-          <div class="product-feature__title">Campaña publicitaria</div>
+          <div class="product-feature__title">CampaÃ±a publicitaria</div>
           <div class="product-feature__desc">Activa en Meta o Google para atraer y validar nuevos clientes.</div>
         </div>
         <div class="product-feature glass">
@@ -477,30 +477,30 @@ a{color:inherit;text-decoration:none}
           <div class="product-feature__desc">Responde, deriva, agenda y apoya el cierre de ventas 24/7.</div>
         </div>
       </div>
-      <a href="#contacto" class="btn btn--primary btn--lg">Quiero activar mi ecosistema →</a>
+      <a href="#contacto" class="btn btn--primary btn--lg">Quiero activar mi ecosistema â</a>
     </div>
   </div>
 </section>
 
-<!-- ═══ DIAGNÓSTICO DE EFICIENCIA ═══ -->
+<!-- âââ DIAGNÃSTICO DE EFICIENCIA âââ -->
 <section class="section">
   <div class="container">
     <div class="diag-banner animate-in d1">
       <div class="diag-banner__content">
-        <span class="badge badge--aqua" style="margin-bottom:var(--space-md);display:inline-flex">Diagnóstico gratuito</span>
-        <h2 class="diag-banner__title">¿Qué tan eficiente es tu empresa hoy?</h2>
-        <p class="diag-banner__desc">Antes de transformar, hay que entender dónde estás. Este diagnóstico rápido te muestra en minutos dónde está el mayor potencial de mejora en tu operación. Sin costo, sin compromiso.</p>
-        <a href="https://robmond.github.io/diagnostico-eficiencia/" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Hacer el diagnóstico →</a>
+        <span class="badge badge--aqua" style="margin-bottom:var(--space-md);display:inline-flex">DiagnÃ³stico gratuito</span>
+        <h2 class="diag-banner__title">Â¿QuÃ© tan eficiente es tu empresa hoy?</h2>
+        <p class="diag-banner__desc">Antes de transformar, hay que entender dÃ³nde estÃ¡s. Este diagnÃ³stico rÃ¡pido te muestra en minutos dÃ³nde estÃ¡ el mayor potencial de mejora en tu operaciÃ³n. Sin costo, sin compromiso.</p>
+        <a href="https://robmond.github.io/diagnostico-eficiencia/" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Hacer el diagnÃ³stico â</a>
       </div>
       <div class="diag-banner__orb"></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ CLIENTES ═══ -->
+<!-- âââ CLIENTES âââ -->
 <section class="section" id="clientes">
   <div class="container">
-    <p class="section__eyebrow animate-in d1">Con quiénes trabajamos</p>
+    <p class="section__eyebrow animate-in d1">Con quiÃ©nes trabajamos</p>
     <h2 class="section__title animate-in d2">Empresas que ya evolucionan con Spherical</h2>
 
     <div class="clients-row animate-in d3">
@@ -513,32 +513,32 @@ a{color:inherit;text-decoration:none}
 
     <div class="testimonial-grid" style="margin-top:var(--space-xl)">
       <div class="testimonial glass animate-in d4">
-        <div class="testimonial__quote">"Una solución diseñada a la medida de nuestras necesidades, que involucró contenido, estrategia y una importante consultoría que mantenemos hasta el día de hoy."</div>
+        <div class="testimonial__quote">"Una soluciÃ³n diseÃ±ada a la medida de nuestras necesidades, que involucrÃ³ contenido, estrategia y una importante consultorÃ­a que mantenemos hasta el dÃ­a de hoy."</div>
         <div class="testimonial__author">
           <div class="testimonial__avatar">AH</div>
           <div>
-            <div class="testimonial__name">Angélica Hernández S.</div>
+            <div class="testimonial__name">AngÃ©lica HernÃ¡ndez S.</div>
             <div class="testimonial__role">Advocacy Patient Group, Roche</div>
           </div>
         </div>
       </div>
       <div class="testimonial glass animate-in d5">
-        <div class="testimonial__quote">"Su capacidad para conectar con nuestros estudiantes, titulados y colaboradores, además de fortalecer nuestro ecosistema de innovación y emprendimiento, es excepcional."</div>
+        <div class="testimonial__quote">"Su capacidad para conectar con nuestros estudiantes, titulados y colaboradores, ademÃ¡s de fortalecer nuestro ecosistema de innovaciÃ³n y emprendimiento, es excepcional."</div>
         <div class="testimonial__author">
           <div class="testimonial__avatar">AO</div>
           <div>
-            <div class="testimonial__name">Andrea Órdenes</div>
+            <div class="testimonial__name">Andrea Ãrdenes</div>
             <div class="testimonial__role">Jefa de Emprendimiento, DuocUC</div>
           </div>
         </div>
       </div>
       <div class="testimonial glass animate-in d6">
-        <div class="testimonial__quote">"Spherical fue una parte fundamental para el diseño e implementación en la experiencia de gamificación de Codelco Andina. Una solución innovadora y de excelencia."</div>
+        <div class="testimonial__quote">"Spherical fue una parte fundamental para el diseÃ±o e implementaciÃ³n en la experiencia de gamificaciÃ³n de Codelco Andina. Una soluciÃ³n innovadora y de excelencia."</div>
         <div class="testimonial__author">
           <div class="testimonial__avatar">AA</div>
           <div>
             <div class="testimonial__name">Antonio Astorga</div>
-            <div class="testimonial__role">Área de RRHH, Codelco Andina</div>
+            <div class="testimonial__role">Ãrea de RRHH, Codelco Andina</div>
           </div>
         </div>
       </div>
@@ -546,7 +546,7 @@ a{color:inherit;text-decoration:none}
   </div>
 </section>
 
-<!-- ═══ DIFERENCIADORES ═══ -->
+<!-- âââ DIFERENCIADORES âââ -->
 <section class="section">
   <div class="container">
     <p class="section__eyebrow animate-in d1">Lo que nos hace diferentes</p>
@@ -559,45 +559,45 @@ a{color:inherit;text-decoration:none}
       </div>
       <div class="diff-card glass animate-in d4">
         <div class="diff-card__num">02</div>
-        <div class="diff-card__title">IA integrada como estándar</div>
-        <div class="diff-card__desc">Cada solución tiene inteligencia artificial incorporada. No como un add-on. Como la base.</div>
+        <div class="diff-card__title">IA integrada como estÃ¡ndar</div>
+        <div class="diff-card__desc">Cada soluciÃ³n tiene inteligencia artificial incorporada. No como un add-on. Como la base.</div>
       </div>
       <div class="diff-card glass animate-in d5">
         <div class="diff-card__num">03</div>
         <div class="diff-card__title">Nos adaptamos a tu profundidad</div>
-        <div class="diff-card__desc">Desde una landing page hasta transformar cómo opera tu empresa. Sin imponer un formato único.</div>
+        <div class="diff-card__desc">Desde una landing page hasta transformar cÃ³mo opera tu empresa. Sin imponer un formato Ãºnico.</div>
       </div>
       <div class="diff-card glass animate-in d3">
         <div class="diff-card__num">04</div>
-        <div class="diff-card__title">Acompañamos la adopción</div>
+        <div class="diff-card__title">AcompaÃ±amos la adopciÃ³n</div>
         <div class="diff-card__desc">Nos quedamos hasta que tu equipo incorpora las herramientas a su trabajo diario.</div>
       </div>
       <div class="diff-card glass animate-in d4">
         <div class="diff-card__num">05</div>
         <div class="diff-card__title">Un equipo, no cinco proveedores</div>
-        <div class="diff-card__desc">Estrategia, tecnología, diseño, marketing, audiovisual y capacitación. Una sola contratación.</div>
+        <div class="diff-card__desc">Estrategia, tecnologÃ­a, diseÃ±o, marketing, audiovisual y capacitaciÃ³n. Una sola contrataciÃ³n.</div>
       </div>
       <div class="diff-card glass animate-in d5">
         <div class="diff-card__num">06</div>
         <div class="diff-card__title">Modelo asset-light</div>
-        <div class="diff-card__desc">Usamos las mejores herramientas del mercado. Implementación rápida, menor costo, mayor flexibilidad.</div>
+        <div class="diff-card__desc">Usamos las mejores herramientas del mercado. ImplementaciÃ³n rÃ¡pida, menor costo, mayor flexibilidad.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ CÓMO EMPEZAR ═══ -->
+<!-- âââ CÃMO EMPEZAR âââ -->
 <section class="section" id="como">
   <div class="container">
     <p class="section__eyebrow animate-in d1" style="text-align:center">Tu primer paso</p>
-    <h2 class="section__title animate-in d2" style="text-align:center;max-width:600px;margin-inline:auto">No importa dónde estés hoy. Lo que importa es hacia dónde quieres ir.</h2>
+    <h2 class="section__title animate-in d2" style="text-align:center;max-width:600px;margin-inline:auto">No importa dÃ³nde estÃ©s hoy. Lo que importa es hacia dÃ³nde quieres ir.</h2>
     <div style="margin-top:var(--space-2xl)">
       <div class="stepper">
         <div class="step animate-in d3">
           <div class="step__node step__node--active">1</div>
           <div class="step__content">
             <div class="step__title">Conversar</div>
-            <div class="step__desc">Una sesión exploratoria de 45 minutos donde escuchamos tu realidad, tus desafíos y tus prioridades. Sin costo. Sin compromiso.</div>
+            <div class="step__desc">Una sesiÃ³n exploratoria de 45 minutos donde escuchamos tu realidad, tus desafÃ­os y tus prioridades. Sin costo. Sin compromiso.</div>
           </div>
         </div>
         <div class="step__connector"></div>
@@ -605,7 +605,7 @@ a{color:inherit;text-decoration:none}
           <div class="step__node">2</div>
           <div class="step__content">
             <div class="step__title">Activar</div>
-            <div class="step__desc">Ponemos en marcha una primera solución concreta: un ecosistema digital en 5 días, un diagnóstico o un workshop de sensibilización en IA.</div>
+            <div class="step__desc">Ponemos en marcha una primera soluciÃ³n concreta: un ecosistema digital en 5 dÃ­as, un diagnÃ³stico o un workshop de sensibilizaciÃ³n en IA.</div>
           </div>
         </div>
         <div class="step__connector"></div>
@@ -613,7 +613,7 @@ a{color:inherit;text-decoration:none}
           <div class="step__node">3</div>
           <div class="step__content">
             <div class="step__title">Transformar</div>
-            <div class="step__desc">Diseñamos e implementamos la solución completa: arquitectura de IA, automatización, herramientas ejecutivas y acompañamiento.</div>
+            <div class="step__desc">DiseÃ±amos e implementamos la soluciÃ³n completa: arquitectura de IA, automatizaciÃ³n, herramientas ejecutivas y acompaÃ±amiento.</div>
           </div>
         </div>
         <div class="step__connector"></div>
@@ -621,7 +621,7 @@ a{color:inherit;text-decoration:none}
           <div class="step__node">4</div>
           <div class="step__content">
             <div class="step__title">Evolucionar</div>
-            <div class="step__desc">Nos convertimos en tu partner tecnológico permanente. Medimos impacto, optimizamos y te guiamos en cada siguiente paso.</div>
+            <div class="step__desc">Nos convertimos en tu partner tecnolÃ³gico permanente. Medimos impacto, optimizamos y te guiamos en cada siguiente paso.</div>
           </div>
         </div>
       </div>
@@ -629,18 +629,18 @@ a{color:inherit;text-decoration:none}
   </div>
 </section>
 
-<!-- ═══ CTA FINAL ═══ -->
+<!-- âââ CTA FINAL âââ -->
 <section class="cta-section" id="contacto">
   <div class="container">
-    <h2 class="cta-section__title animate-in d1">¿Listo para dar el primer paso?</h2>
-    <p class="cta-section__sub animate-in d2">45 minutos. Sin costo. Sin compromiso. Solo una conversación honesta sobre dónde está tu empresa y hacia dónde puede ir.</p>
+    <h2 class="cta-section__title animate-in d1">Â¿Listo para dar el primer paso?</h2>
+    <p class="cta-section__sub animate-in d2">45 minutos. Sin costo. Sin compromiso. Solo una conversaciÃ³n honesta sobre dÃ³nde estÃ¡ tu empresa y hacia dÃ³nde puede ir.</p>
     <div class="animate-in d3" style="display:flex;gap:var(--space-sm);justify-content:center;flex-wrap:wrap">
-      <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0SnRZranoG4i04izzBxi3LlSPK0uRi1-M7JTp24WHbxQK3P_iEsVd7lZY0AlEmI2yhMH5jmN7J" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Agenda una sesión exploratoria</a>
+      <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0SnRZranoG4i04izzBxi3LlSPK0uRi1-M7JTp24WHbxQK3P_iEsVd7lZY0AlEmI2yhMH5jmN7J" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Agenda una sesiÃ³n exploratoria</a>
     </div>
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
+<!-- âââ FOOTER âââ -->
 <footer class="footer">
   <div class="container">
     <div class="footer__inner">
@@ -653,7 +653,7 @@ a{color:inherit;text-decoration:none}
         <ul class="footer__links">
           <li><a href="#servicios">Ecosistemas Digitales</a></li>
           <li><a href="#servicios">IA Empresarial</a></li>
-          <li><a href="#">MIDE™</a></li>
+          <li><a href="#">MIDEâ¢</a></li>
         </ul>
       </div>
       <div>
@@ -667,7 +667,7 @@ a{color:inherit;text-decoration:none}
       <div>
         <div class="footer__heading">Contacto</div>
         <ul class="footer__links">
-          <li><a href="/cdn-cgi/l/email-protection#71031e131403051e3102011914031812101d5f121d"><span class="__cf_email__" data-cfemail="85f7eae7e0f7f1eac5f6f5ede0f7ece6e4e9abe6e9">[email&#160;protected]</span></a></li>
+          <li><a href="mailto:contacto@spherical.cl">contacto@spherical.cl</a></li>
           <li><a href="https://spherical.cl">www.spherical.cl</a></li>
           <li><a>Apoquindo 2930, Piso 2</a></li>
           <li><a>Las Condes, Santiago</a></li>
@@ -718,30 +718,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 </script>
-document.addEventListener('DOMContentLoaded', function() {
-
-  // Theme toggle
-  var btn = document.getElementById('theme-toggle');
-  var root = document.documentElement;
-  try { var saved = localStorage.getItem('spherical-theme'); if (saved) root.setAttribute('data-theme', saved); } catch(e) {}
-  if (btn) {
-    btn.addEventListener('click', function() {
-      var current = root.getAttribute('data-theme');
-      var next = (current === 'light') ? 'dark' : 'light';
-      root.setAttribute('data-theme', next);
-      try { localStorage.setItem('spherical-theme', next); } catch(e) {}
-    });
-  }
-
-  // Intersection Observer for scroll animations
-  var obs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      if (e.isIntersecting) {
-        e.target.style.animationPlayState = 'running';
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.animate-in').forEach(function(el) {
-    el.style.animati
+</body>
+</html>
