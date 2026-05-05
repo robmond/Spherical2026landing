@@ -444,7 +444,59 @@
       justify-content: center;
       text-align: center;
       padding: 100px 24px 60px;
-      gap: var(--space-lg)
+      gap: var(--space-lg);
+      position: relative;
+    }
+
+    .hero__video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.6;
+      /* Oscurece un poco para que el texto sea legible */
+    }
+
+    .hero__logos {
+      width: 100%;
+      overflow: hidden;
+      margin-top: var(--space-2xl);
+      padding: var(--space-md) 0;
+      position: relative;
+      mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+      animation: cascade-in .8s var(--ease-glass) .6s both;
+    }
+
+    .hero__logos-track {
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+
+    .hero__logos-track img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      /* Logos en blanco */
+      opacity: 0.6;
+      transition: opacity var(--dur-fast);
+    }
+
+    .hero__logos-track img:hover {
+      opacity: 1;
+    }
+
+    @keyframes marquee {
+      to {
+        transform: translateX(calc(-50% - 30px));
+      }
     }
 
     .hero__kicker {
@@ -1565,34 +1617,38 @@
 
     <!-- ═══ HERO ═══ -->
     <section class="hero">
-      <span class="hero__kicker">Inteligencia aplicada para empresas</span>
-      <h1 class="hero__title">Tu empresa ya tiene el talento. Nosotros le damos las herramientas para multiplicarlo.
-      </h1>
-      <p class="hero__sub">Spherical integra inteligencia artificial a tu operación, tus equipos y tu estrategia. No
-        vendemos tecnología. Instalamos capacidades que tu organización adopta y conserva.</p>
-      <div class="hero__cta">
-        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0SnRZranoG4i04izzBxi3LlSPK0uRi1-M7JTp24WHbxQK3P_iEsVd7lZY0AlEmI2yhMH5jmN7J"
-          target="_blank" rel="noopener" class="btn btn--primary btn--lg">Agenda una sesión exploratoria</a>
-        <a href="#servicios" class="btn btn--ghost btn--lg">Conoce cómo trabajamos ↓</a>
+      <video class="hero__video-bg" autoplay loop muted playsinline>
+        <source src="assets/video-fondo.mp4" type="video/mp4">
+      </video>
+      <span class="hero__kicker">Inteligencia artificial para las personas</span>
+      <h1 class="hero__title">Impulsando la nueva generación de empresas conectadas al futuro</h1>
+      <p class="hero__sub">Spherical integra inteligencia artificial a tu operación, tus equipos y tu estrategia.
+        Instalamos capacidades que tu organización adopta y conserva.</p>
+
+      <!-- Carrusel de Logos -->
+      <div class="hero__logos">
+        <div class="hero__logos-track">
+          <!-- Set original -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Hoffmann-La_Roche_logo.svg" alt="Roche">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Codelco_logo.svg" alt="Codelco">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Komatsu_company_logos.svg" alt="Komatsu">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg" alt="DuocUC">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Banco_Santander_Logotipo.svg" alt="Banco Santander">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgNDUiIHdpZHRoPSIxMDAiIGhlaWdodD0iNDUiPgogIDx0ZXh0IHg9IjUwIiB5PSIzNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjM2IiBmb250LXN0eWxlPSJpdGFsaWMiIGZpbGw9IiMwMDAwMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMiI+VlRSPC90ZXh0Pgo8L3N2Zz4=" alt="VTR">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Start-Up_Chile_logo.svg" alt="Start-Up Chile">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNDUiIHdpZHRoPSIyMDAiIGhlaWdodD0iNDUiPgogIDx0ZXh0IHg9IjEwMCIgeT0iMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyOCIgZmlsbD0iIzAwMDAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjEiPkFHUk9TVVBFUjwvdGV4dD4KPC9zdmc+" alt="Agrosuper">
+          <!-- Duplicado para efecto infinito -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Hoffmann-La_Roche_logo.svg" alt="Roche">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Codelco_logo.svg" alt="Codelco">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Komatsu_company_logos.svg" alt="Komatsu">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg" alt="DuocUC">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Banco_Santander_Logotipo.svg" alt="Banco Santander">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgNDUiIHdpZHRoPSIxMDAiIGhlaWdodD0iNDUiPgogIDx0ZXh0IHg9IjUwIiB5PSIzNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjM2IiBmb250LXN0eWxlPSJpdGFsaWMiIGZpbGw9IiMwMDAwMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMiI+VlRSPC90ZXh0Pgo8L3N2Zz4=" alt="VTR">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Start-Up_Chile_logo.svg" alt="Start-Up Chile">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNDUiIHdpZHRoPSIyMDAiIGhlaWdodD0iNDUiPgogIDx0ZXh0IHg9IjEwMCIgeT0iMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyOCIgZmlsbD0iIzAwMDAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjEiPkFHUk9TVVBFUjwvdGV4dD4KPC9zdmc+" alt="Agrosuper">
+        </div>
       </div>
-      <div class="stats">
-        <div class="stats__item glass">
-          <div class="stats__num">8+</div>
-          <div class="stats__desc">Años de experiencia</div>
-        </div>
-        <div class="stats__item glass">
-          <div class="stats__num">100+</div>
-          <div class="stats__desc">Empresas atendidas</div>
-        </div>
-        <div class="stats__item glass">
-          <div class="stats__num">5</div>
-          <div class="stats__desc">Industrias transformadas</div>
-        </div>
-        <div class="stats__item glass">
-          <div class="stats__num">IA</div>
-          <div class="stats__desc">Integrada en todo</div>
-        </div>
-      </div>
+
     </section>
 
     <!-- ═══ PROBLEMA ═══ -->
@@ -1708,41 +1764,7 @@
       </div>
     </section>
 
-    <!-- ═══ PRODUCTO ESTRELLA ═══ -->
-    <section class="section" id="producto">
-      <div class="container">
-        <div class="product-box glass animate-in d1">
-          <span class="badge badge--aqua">Empieza ahora</span>
-          <h2 class="section__title" style="text-align:center;margin-bottom:0">Activa tu ecosistema de IA en 5 días
-            hábiles</h2>
-          <div class="product-box__price">Desde $650.000 CLP/mes</div>
-          <p style="opacity:0.6;max-width:500px;text-align:center;line-height:1.7;font-size:var(--text-md)">No necesitas
-            un proyecto de 6 meses para empezar. En una semana, tu empresa puede tener funcionando un sistema digital
-            inteligente.</p>
-          <div class="product-features">
-            <div class="product-feature glass">
-              <div class="product-feature__title">Landing page</div>
-              <div class="product-feature__desc">Propuesta de valor clara y diseñada para convertir visitantes en
-                clientes.</div>
-            </div>
-            <div class="product-feature glass">
-              <div class="product-feature__title">Campaña publicitaria</div>
-              <div class="product-feature__desc">Activa en Meta o Google para atraer y validar nuevos clientes.</div>
-            </div>
-            <div class="product-feature glass">
-              <div class="product-feature__title">CRM conectado</div>
-              <div class="product-feature__desc">Centraliza contactos y automatiza cada seguimiento sin esfuerzo manual.
-              </div>
-            </div>
-            <div class="product-feature glass">
-              <div class="product-feature__title">Agente conversacional</div>
-              <div class="product-feature__desc">Responde, deriva, agenda y apoya el cierre de ventas 24/7.</div>
-            </div>
-          </div>
-          <a href="#contacto" class="btn btn--primary btn--lg">Quiero activar mi ecosistema →</a>
-        </div>
-      </div>
-    </section>
+
 
     <!-- ═══ DIAGNÓSTICO DE EFICIENCIA ═══ -->
     <section class="section">
@@ -1765,52 +1787,7 @@
     <!-- ═══ CLIENTES ═══ -->
     <section class="section" id="clientes">
       <div class="container">
-        <p class="section__eyebrow animate-in d1">Con quiénes trabajamos</p>
-        <h2 class="section__title animate-in d2">Empresas que ya evolucionan con Spherical</h2>
 
-        <div class="clients-slider animate-in d3">
-          <div class="clients-track">
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Hoffmann-La_Roche_logo.svg" alt="Roche"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Codelco_logo.svg" alt="Codelco"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Komatsu_company_logos.svg" alt="Komatsu"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg" alt="DuocUC"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Start-Up_Chile_logo.svg" alt="Start-Up Chile"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Banco_Santander_Logotipo.svg"
-              alt="Banco Santander" class="client-logo">
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgNDUiIGhlaWdodD0iNDUiPjx0ZXh0IHg9IjEwIiB5PSIzNCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjMyIiBmaWxsPSIjZmZmZmZmIiBmb250LXN0eWxlPSJpdGFsaWMiPlZUUjwvdGV4dD48L3N2Zz4="
-              alt="VTR" class="client-logo">
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNDUiIGhlaWdodD0iNDUiPjx0ZXh0IHg9IjEwIiB5PSIzMiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjI4IiBmaWxsPSIjZmZmZmZmIiBsZXR0ZXItc3BhY2luZz0iMSI+QUdST1NVUEVSPC90ZXh0Pjwvc3ZnPg=="
-              alt="Agrosuper" class="client-logo">
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Hoffmann-La_Roche_logo.svg" alt="Roche"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Codelco_logo.svg" alt="Codelco"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Komatsu_company_logos.svg" alt="Komatsu"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg" alt="DuocUC"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Start-Up_Chile_logo.svg" alt="Start-Up Chile"
-              class="client-logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Banco_Santander_Logotipo.svg"
-              alt="Banco Santander" class="client-logo">
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgNDUiIGhlaWdodD0iNDUiPjx0ZXh0IHg9IjEwIiB5PSIzNCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjMyIiBmaWxsPSIjZmZmZmZmIiBmb250LXN0eWxlPSJpdGFsaWMiPlZUUjwvdGV4dD48L3N2Zz4="
-              alt="VTR" class="client-logo">
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNDUiIGhlaWdodD0iNDUiPjx0ZXh0IHg9IjEwIiB5PSIzMiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjI4IiBmaWxsPSIjZmZmZmZmIiBsZXR0ZXItc3BhY2luZz0iMSI+QUdST1NVUEVSPC90ZXh0Pjwvc3ZnPg=="
-              alt="Agrosuper" class="client-logo">
-
-          </div>
-        </div>
 
         <div class="testimonial-grid" style="margin-top:var(--space-xl)">
           <div class="testimonial glass animate-in d4">
@@ -1964,9 +1941,11 @@
       <div class="container">
         <div class="footer__inner">
           <div>
-            <div class="footer__brand"><img
-                src="data:image/png;base64,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"
-                alt="Spherical" style="height:24px;width:auto;filter:brightness(2)"></div>
+            <div class="footer__brand">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" style="height:24px;width:auto;">
+                <text x="0" y="30" font-family="sans-serif" font-weight="bold" font-size="28" fill="white" letter-spacing="1">Spherical</text>
+              </svg>
+            </div>
             <p class="footer__tagline">Impulsando la nueva generación de empresas conectadas al futuro.
               Santiago, Chile.
             </p>
